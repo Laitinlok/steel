@@ -35,6 +35,7 @@ ADD --chown=opam:opam ./ steel/
 # FIXME: the `opam depext` command should be unnecessary with opam 2.1
 ENV FSTAR_HOME=$HOME/FStar
 ENV KRML_HOME=$HOME/karamel
+ARG OPAM_UPDATE_DATE=unknown
 RUN sudo apt-get update && sudo apt-get install --yes --no-install-recommends \
     wget \
     jq \
